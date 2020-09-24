@@ -83,7 +83,7 @@ call sonokai#highlight('DiffChange', s:palette.none, s:palette.diff_blue)
 call sonokai#highlight('DiffDelete', s:palette.none, s:palette.diff_red)
 call sonokai#highlight('DiffText', s:palette.bg0, s:palette.blue)
 call sonokai#highlight('Directory', s:palette.green, s:palette.none)
-call sonokai#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
+call sonokai#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold')
 call sonokai#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
 call sonokai#highlight('ModeMsg', s:palette.fg, s:palette.none, 'bold')
 call sonokai#highlight('MoreMsg', s:palette.blue, s:palette.none, 'bold')
@@ -928,6 +928,11 @@ highlight! link mkdListItem Red
 highlight! link mkdRule Purple
 highlight! link mkdDelimiter Grey
 highlight! link mkdId Yellow
+" }}}
+" ft_end }}}
+" ft_begin: vimwiki {{{
+" builtin: https://github.com/vimwiki/vimwiki{{{
+highlight! link VimwikiLink markdownUrl
 " }}}
 " ft_end }}}
 " ft_begin: rst {{{
