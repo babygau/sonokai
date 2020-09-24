@@ -70,7 +70,7 @@ else
   call sonokai#highlight('CursorLine', s:palette.none, s:palette.bg1)
   call sonokai#highlight('CursorColumn', s:palette.none, s:palette.bg1)
 endif
-call sonokai#highlight('LineNr', s:palette.grey, s:palette.none)
+call sonokai#highlight('LineNr', s:palette.grey, s:palette.bg3)
 if &diff
   call sonokai#highlight('CursorLineNr', s:palette.fg, s:palette.none, 'underline')
 elseif (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
